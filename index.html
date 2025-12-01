@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+  <header id="header">
+    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img">
+
+    <!-- Hamburger Button -->
+    <div class="hamburger" id="ham-btn">☰</div>
+
+    <nav id="nav-bar">
+      <ul class="nav-list">
+        <li><a href="#Features-main">Features</a></li>
+        <li><a href="#works">How It Works</a></li>
+        <li><a href="#container">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sidebar for Mobile -->
+  <div class="sidebar" id="sidebar">
+    <a href="#Features-main">Features</a>
+    <a href="#works">How It Works</a>
+    <a href="#container">Pricing</a>
+  </div>
+
+  <section class="s1" id="hero">
+    <h1>Handcrafted, home-made masterpieces</h1>
+    <input type="email" placeholder="Enter your email address" id="email"><br><br>
+    <button  onclick="myFunction()">GET STARTED</button>
+  </section>
+<section class="Features-main animate" id="Features-main">
+  <div class="Features animate">
+    <img src="i1.png" alt="">
+   
+    <h2>Premium Materials</h2><br>
+    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+    </div>
+  
+   <div class="Features animate">
+    <img src="i2-removebg-preview.png" alt="">
+    
+    <h2>Fast Shipping</h2><br>
+    <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+    </div>
+ 
+   <div class="Features animate">
+    <img src="i3-removebg-preview.png" alt="">
+    
+    <h2>Quality Assurance</h2><br>
+    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </div>
+  </section>
+
+
+  <section id="works">
+     <div class="video-wrapper">
+   <iframe id="video"
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+</section>
+
+
+<div class="container animate" id="container">
+
+    <!-- Tenor Trombone -->
+    <div class="box">
+        <h2>TENOR TROMBONE</h2>
+        <div class="price">$600</div>
+        <p>Good for beginners</p>
+        <p>Excellent sound quality</p>
+        <p>Great for Jazz Bands</p>
+        <p>Nice and shiny</p>
+        <a href="#" class="btn">SELECT</a>
+    </div>
+
+    <!-- Bass Trombone -->
+    <div class="box">
+        <h2>BASS TROMBONE</h2>
+        <div class="price">$900</div>
+        <p>Sound quality is unmatched</p>
+        <p>Best for professionals</p>
+        <p>Absolutely stunning</p>
+        <p>Durable and long lasting</p>
+        <a href="#" class="btn">SELECT</a>
+    </div>
+
+    <!-- Valve Trombone -->
+    <div class="box">
+        <h2>VALVE TROMBONE</h2>
+        <div class="price">$1200</div>
+        <p>Plays similar to a Trumpet</p>
+        <p>Great for Jazz Bands</p>
+        <p>Beautiful in sound and appearance</p>
+        <p>Just amazing</p>
+        <a href="#" class="btn">SELECT</a>
+    </div>
+
+</div>
+
+<footer>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+    <div>Copyright 2025, Original Trombones </div>
+    <div>created by Darshan Tarsariya</div>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+   body{
+    background-color: rgb(224, 226, 228);
+ margin-left: 0%;
+    margin-right: 0%;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white; /* optional but recommended */
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+    max-height: 100%;
+}
+
+
+#header-img{
+  width: 300px;
+
+}
+
+ 
+.nav-list{
+    display: flex;
+    align-items: center;
+    font-size: large;
+    padding-right: 50px;
+    list-style: none;
+}
+
+.nav-list a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 30px;
+    color: black;
+     transition: all 0.3s ease-in-out;
+}
+
+.nav-list a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+
+.s1{
+     text-align: center;    
+}
+
+.s1 h1{
+    
+    margin-top: 150px; /* because header is fixed */
+}
+
+.s1 input[type="email"]{
+    width: 400px;
+    height: 40px;
+    font-weight: 300;
+    background-color: white;
+}
+
+.s1 button {
+        background-color: #ffc107;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out;
+
+}
+
+.s1 button:hover{
+    border: 5px black;
+    background-color: orange ;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* HAMBURGER BUTTON (Hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: white;
+  padding-top: 70px;
+  transition: 0.3s;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+  color: black;
+  border-bottom: 1px solid #ddd;
+}
+
+/* RESPONSIVE — MOBILE VIEW */
+@media only screen and (max-width: 768px) {
+
+  #nav-bar {
+    display: none; /* hide original menu */
+  }
+
+  .hamburger {
+    display: block; /* show hamburger button */
+  }
+
+  #header-img {
+    width: 250px;
+  }
+}
+
+.Features-main{
+  gap:20px;
+  display: flex;
+
+}
+
+@media screen  and (max-width: 768px) {
+  .Features-main{
+    flex-wrap: wrap;
+  }
+
+  .container{
+    flex-wrap: wrap;
+  }
+}
+
+.Features{
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+   padding-top: 30px;
+   display:table-cell;
+}
+.Features img{
+  width: 250px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.Features img:hover{
+  transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+
+}
+
+/* Center the video */
+.video-wrapper {
+  display: flex;
+  justify-content: center;   /* Horizontally center */
+  align-items: center;       /* Vertically center (if section has height) */
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* Make iframe responsive */
+#video {
+  width: 80%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 10px; /* optional rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* optional shadow */
+}
+
+
+.container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .box {
+        background: white;
+        width: 300px;
+        border: 2px solid #ccc;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .box:hover{
+      transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+    }
+
+    .box h2 {
+        background: #e5e5e5;
+        margin: 0;
+        padding: 15px 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .price {
+        font-size: 34px;
+        font-weight: bold;
+        margin: 25px 0;
+    }
+
+    .box p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .btn {
+        background: #f1c40f;
+        padding: 12px 30px;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .btn:hover{
+       border: 5px black;
+    background-color: orange ;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+        text-align: right;
+        padding: 20px 40px;
+        font-size: 16px;
+        background: white;
+        margin-top: 40px;
+    }
+
+    footer a {
+        color: black;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+  .Features-main {
+  position: relative;
+  animation: myAnimation 1s ease-out;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.Features-main {
+  position: relative;
+  animation: myAnimation 1s ease-out;
+}
+
+
