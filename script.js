@@ -1,9 +1,15 @@
 const ham = document.getElementById("ham-btn");
 const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("close-btn");
 
 ham.addEventListener("click", () => {
-  sidebar.style.right = sidebar.style.right === "0px" ? "-250px" : "0px";
+    sidebar.style.left = "0px";
 });
+
+closeBtn.addEventListener("click", () => {
+    sidebar.style.left = "-250px";
+});
+
 
 
 
@@ -12,14 +18,12 @@ function myFunction(){
 
     if (email === "") {
       alert("Please enter your email first!");
-    } if (email!="%@gmail.com") {
-        alert("please enter correct email");
+    } if (!email.includes("@") || !email.includes(".")) {
+  alert("Please enter a valid email address!");
     } else {
       alert("Email submitted: " + email);
     }
 }
-
-
 
 // Scroll animation system
 const elements = document.querySelectorAll('.animate');
@@ -38,3 +42,4 @@ function checkAnimation() {
 
 window.addEventListener('scroll', checkAnimation);
 window.addEventListener('load', checkAnimation);
+
